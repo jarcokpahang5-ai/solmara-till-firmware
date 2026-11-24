@@ -6,7 +6,13 @@ Entry for the make.fun competition **Till Firmware Do Us Part** (`u-azazex-till-
 
 > I promise to love you through every update, every crash, and every forgotten password — till firmware do us part.
 
-(113 characters — within the competition's limit of 200.)
+(147 characters — within the competition's limit of 200.)
+
+## Revision
+
+Revised: the vow now continues past the firmware line with "and even after
+the factory reset" for a sweeter finish, and `main.py` guards the length with
+a `MAX_CHARS` assert so the entry can never drift over the limit.
 
 ## Run it
 

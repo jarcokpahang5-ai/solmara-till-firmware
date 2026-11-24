@@ -7,9 +7,15 @@ where the competition's scorer reads it.
 
 import os
 
+# Competition limit for the single wedding vow.
+MAX_CHARS = 200
+
 LINE = (
-    'I promise to love you through every update, every crash, and every forgotten password — till firmware do us part.'
+    'I promise to love you through every update, every crash, and every forgotten password — till firmware do us part, and even after the factory reset.'
 )
+
+# Guard: the entry must stay inside the competition's character limit.
+assert len(LINE) <= MAX_CHARS, f"line is {len(LINE)} chars, over the {MAX_CHARS} limit"
 
 
 def main():
